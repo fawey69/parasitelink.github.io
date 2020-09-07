@@ -2394,6 +2394,9 @@ body {
     content: ' ';
     background-image: url(../../images/bg.png);
     background-color: #00bdfe;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
