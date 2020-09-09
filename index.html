@@ -18,8 +18,6 @@
     <header id="header">
       <a class="logo" href="index.html">Parasite Eve</a>  
       <nav>
-        <a href="minecraft://?addExternalServer=§bPARASITE§3EVE|play.parasiteeve.xyz:19132">Coba</a>
-        <button class="button small" data-clipboard-text="play.parasiteeve.xyz" >Copy IP</button>
         <a href="#menu">Menu</a>
       </nav>
     </header>
@@ -27,7 +25,7 @@
     <!-- Nav -->
     <nav id="menu">
       <ul class="links">
-        <li><a class="scroll" href="index.html">Home</a></li>
+        <li><a class="scroll" href="/">Home</a></li>
         <li><a href="/discord/">Discord</a></li>
         <li><a href="/vote/">Vote</a></li>
         <li><a href="/shop">Shop</a></li>
@@ -38,7 +36,9 @@
     <section id="banner">
       <div class="inner">
         <h1>Parasite Eve</h1>
-        <p>Minecraft PE Server</p>
+        <p>Minecraft Bedrock Server</p>
+        <a href="minecraft://?addExternalServer=§bPARASITE§3EVE|play.parasiteeve.xyz:19132" class="button small" >Play Now</a>
+      </form>
       </div>
       
     </section>
@@ -152,39 +152,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> 
     <script src="https://kit.fontawesome.com/2355c9ef5e.js" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-$('button').tooltip({
-  trigger: 'click',
-  placement: 'bottom'
-});
-
-function setTooltip(btn, message) {
-  $(btn).tooltip('hide')
-    .attr('data-original-title', message)
-    .tooltip('show');
-}
-
-function hideTooltip(btn) {
-  setTimeout(function() {
-    $(btn).tooltip('hide');
-  }, 1000);
-}
-
-
-var clipboard = new Clipboard('button');
-
-clipboard.on('success', function(e) {
-  setTooltip(e.trigger, 'Copied!');
-  hideTooltip(e.trigger);
-});
-
-clipboard.on('error', function(e) {
-  setTooltip(e.trigger, 'Failed!');
-  hideTooltip(e.trigger);
-});</script>
 
   </body>
 </html>
